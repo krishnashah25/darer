@@ -216,25 +216,26 @@ body {
   box-sizing: border-box;
 }
 
+.bottombar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #222;
+    box-sizing: border-box;
+}
+
 .bottombar i {
     padding-left: 12px;
 }
 
 .bottombar a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 13.3333px;
-}
-
-.button {
-  background-color: #111;
-  color: white;
-  border: none;
-  border-bottom: 2px solid transparent;
-  box-sizing: border-box;
-}
-
-.button:hover {
-  border-bottom: 2px solid white;
-  transform-origin: 0.3s;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13.3333px;
 }
