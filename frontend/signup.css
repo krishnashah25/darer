@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 10px;
+}
+
+.overlay {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: #1f1f23;
+    margin-top: 20px;
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar h2 {
+    margin: 5px 0px 10px 0px;
+    font-size: 20px;
+    color: #00fff7;
+}
+
+.close {
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3a3a3d;
+    color: white;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+.password-box {
+    display: flex;
+    align-items: center;
+    background-color: #3a3a3d;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.password-box input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.eye-icon {
+    padding: 10px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.dob {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.dob select {
+    flex: 1;
+}
+
+.phone-box {
+    display: flex;
+    gap: 5px;
+}
+
+.phone-box .code {
+    flex: 1.2;
+}
+
+.phone-box input {
+    flex: 2;
+}
+
+.email-link {
+    color: #ff66ff;
+    text-decoration: underline;
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.info, .terms {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.terms a {
+    color: #ff66ff;
+    text-decoration: underline;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #fffc00;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: not-allowed;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #ff66ff;
+    text-decoration: none;
+    font-weight: bold;
+}

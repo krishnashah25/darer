@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 10px;
+}
+
+.page-title {
+    margin-top: 0px;
+    font-size: 1.5rem; 
+    color: #00fff7; 
+    text-align: center; 
+    margin-bottom: 10px; 
+}
+
+.header-buttons {
+    display: flex; 
+    justify-content: space-around;
+    margin-bottom: 1rem; 
+    text-decoration: none;
+}
+
+.header-buttons a {
+    text-decoration: none;
+}
+
+.tab {
+    padding: 0.5rem 1.2rem; 
+    border: none; 
+    background-color: transparent; 
+    color: #999; 
+    font-weight: bold; 
+    font-size: 1rem; 
+    border-bottom: 2px solid transparent; 
+    cursor: pointer; 
+}
+
+.tab.active {
+    color: #ff00ff;
+    border-bottom: 2px solid #ff00ff;
+}
+.whispers-page {
+  padding: 10px;
+}
+
+.whispers-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.whispers-header h2 {
+  color: #00fff7;
+
+  font-size: 24px;
+  margin: 0;
+}
+
+.search-input {
+  padding: 10px;
+  border: 2px solid #ff00ff;
+  border-radius: 12px;
+  background: transparent;
+  color: white;
+  outline: none;
+  font-size: 14px;
+}
+
+.chat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  background-color: #111111;
+  padding: 9.6px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chat-item:hover {
+  transform: scale(1.03);
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+  border: 2px solid #00fff7;
+}
+
+.chat-info h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #00fff7;
+}
+
+.chat-info p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+.chat-time {
+  margin-left: auto;
+  font-size: 12px;
+  color: #fffc00;
+}
+
+.bottombar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #222;
+    box-sizing: border-box;
+}
+
+.bottombar i {
+    padding-left: 12px;
+}
+
+.bottombar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13.3333px;
+}
