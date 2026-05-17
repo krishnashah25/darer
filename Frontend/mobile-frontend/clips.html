@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clips.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>darer-profile-clips</title>
+</head>
+<body>
+
+    <div class="banner">
+        <img src="https://placehold.co/300x90" alt="profile banner">
+    </div>
+
+    <div class="profile-page">
+        <div class="header">
+            <div class="activity-item" style="background-color: transparent;">
+                <img src="avatar1.jpg" alt="Avatar" class="avatar" />
+                <div class="profile-info">
+                    <div>
+                        <h2 class="username">Taylien</h2>
+                        <p class="last-live">Last live 3 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="bio">Hi! I’m Taylien, I’m a variety creator with an emphasis on trying to build the friendliest community I possibly can. </p>
+            </div>
+            <!--<button class="edit-btn">Edit Profile</button>-->
+        </div>
+
+        <div class="socials">
+            <a><span>📷 Instagram</span></a>
+            <a><span>💬 Discord</span></a>
+            <a><span>🐦 Twitter</span></a>
+        </div>
+
+        <div class="sub">
+            <div class="sub-item follow"><i class="fa-regular fa-heart"></i>Follow</div>
+            <div class="sub-item"><i class="fa-regular fa-star"></i>Subcribe</div>
+            <div class="sub-item dot"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        </div>
+
+        <div class="menu">
+            <a class="menu-item" href="profile.html">Home</a>
+            <a class="menu-item" href="about.html">About</a>
+            <a class="menu-item" href="schedule.html">Schedule</a>
+            <a class="menu-item" href="Videos.html">Videos</a>
+            <a class="menu-item turbo" href="clips.html">Clips</a>
+        </div>
+
+        <!-- Top Filter Bar -->
+        <div class="filter-bar">
+            <div class="toggle">
+                <span style="margin-right:3px;">Featured Only</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="filter">
+                <span>Filter by:</span>
+                <select style="border-radius:8px; background-color:#1a1a1a; color: white;" >
+                    <option>30 Days</option>
+                    <option>7 Days</option>
+                    <option>24 Hours</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Clip Section -->
+        <div class="clip-card">
+            <div class="clip-thumb">
+                <span class="duration">0:30</span>
+                <span class="views">107 views</span>
+                <span class="time">21 days ago</span>
+            </div>
+            <div class="clip-info">
+                <img src="https://via.placeholder.com/50" class="profile-pic" alt="profile">
+                <div class="details">
+                    <h3>xGigglypuff</h3>
+                    <p class="title">crustaceous</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bottombar">
+        <a href="home.html">
+            <i class="fa-solid fa-house"></i>
+            <div>Home</div>
+        </a>
+        <a href="live_channel.html">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div>Browse</div>
+        </a>
+        <a href="activity.html">
+            <i class="fa-solid fa-bell"></i>
+            <div>Activity</div>
+        </a>
+        <a href="profile.html">
+            <i class="fa-solid fa-user"></i>
+            <div>Profile</div>
+        </a>
+    </footer>
+    <script src="profile.js" ></script>
+</body>
+</html>

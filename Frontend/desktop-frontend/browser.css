@@ -1,0 +1,172 @@
+body {
+    background-color: #0e0e10;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #18181b;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+  font-size: 26px;
+  color: #00fff7;
+  margin: 0px;
+}
+
+.browse, .menu-dots {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ff00ff;
+}
+
+.center-header {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    background-color: #111;
+    color: #00fff7;
+    outline: none;
+    box-shadow: 0 0 5px #00fff7;
+    width: 60%;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+.right-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.login-btn {
+    background: transparent;
+    color: #fffc00;
+    border: 1px solid #fffc00;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.signup-btn {
+    background: #ff00ff;
+    color: black;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.profile-icon {
+    border-radius: 50%;
+}
+
+/* MAIN CONTENT */
+.main-container {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    padding: 10px;
+    background-color: #18181b;
+}
+
+.sidebar-title {
+    font-size: 14px;
+    color: #fffc00;
+    margin-bottom: 10px;
+}
+
+.live-channel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 10px;
+}
+
+.live-channel img {
+    border-radius: 50%;
+}
+
+.name {
+    margin: 0;
+    font-weight: bold;
+    color: #00fff7;
+}
+
+.game {
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+}
+
+.viewers {
+    margin-left: auto;
+    font-size: 12px;
+    color: #fffc00;
+}
+
+/* right- section*/
+
+.right-section {
+    padding: 10px;
+}
+
+.right-section h1 {
+    font-size: 40px;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+/* Categories */
+.categories {
+  margin-top: 20px;
+}
+
+.category-list {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 30px 0px 30px;
+}
+
+.category {
+  text-align: start;
+  font-size: 18px;
+}
+
+.category p {
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.category img {
+  width: 230px;
+  height: 300px;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.category span {
+  color: #ccc;
+  font-size: 16px;
+}

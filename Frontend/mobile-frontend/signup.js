@@ -83,4 +83,41 @@ document.addEventListener("DOMContentLoaded", () => {
     [usernameInput, passwordInput, phoneInput, monthSelect, daySelect, yearSelect].forEach((el) => {
         el.addEventListener("input", validateInputs);
     });
+
+    // Handle signup button click
+    signupBtn.addEventListener("click", async (e) => {
+        e.preventDefault();
+
+        const username = usernameInput.value.trim();
+        const password = passwordInput.value.trim();
+        const phone = phoneInput.value.trim();
+        const month = monthSelect.value;
+        const day = daySelect.value;
+        const year = yearSelect.value;
+
+        const dob = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+
+        try {
+            const res = await fetch("http://localhost:3000/api/signup", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ username, password, phone, dob })
+            });
+            const data = await res.json();
+            if (res.ok) {
+                if (data.exists) {
+                    alert("User already exists!");
+                } else {
+                    alert("Signup successful!");
+                    // Optionally redirect or close modal
+                    window.location.href = "http://localhost:3000/frontend/home.html";
+                }
+            } else {
+                alert(data.message || "Signup failed!");
+            }
+        } catch (err) {
+            console.log(err);
+            alert("Error connecting to server.");
+        }
+    });
 });

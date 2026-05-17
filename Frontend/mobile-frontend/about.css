@@ -4,43 +4,52 @@
     box-sizing: border-box;
 }
 
+.banner {
+    height: 90px;
+    width: 100%;
+}
+
 body {
     background-color: #000;
     color: #fff;
     font-family: 'Segoe UI', sans-serif;
-    padding: 10px;
+    padding: 10px
 }
 
 .profile-info {
     padding-top: 18px;
 }
+
 .profile-page {
     max-width: 420px;
     margin: auto;
-    padding-bottom: 50px;
+    position: relative;
+    bottom: 60px;
 }
 
-.header { 
-    background: #000;
+.header {
+    background-color: transparent;
+    /*background: #000;*/
     padding: 15px 15px 10px 15px;
-/**    border-bottom: 1px solid #333;**/
-    position: relative;
+    /**    border-bottom: 1px solid #333;**/
+    /*position: relative;
+    bottom: 60px;*/
 }
 
 .activity-item {
-    display: flex; 
-    align-items: flex-start; 
-    gap: 0.8rem; 
-    background-color: #000; 
-    border-radius: 10px; 
-    padding: 20px 8px 8px 0px; 
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 20px 8px 8px 0px;
 }
 
 .avatar {
-    width: 50px; 
+    width: 50px;
     height: 50px;
-    border-radius: 50%; 
-    border: 2px solid #00fff7; 
+    border-radius: 50%;
+    border: 2px solid #00fff7;
 }
 
 .avatar {
@@ -84,25 +93,66 @@ body {
     color: #00fff7;
 }
 
+.sub {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sub i {
+    margin-right: 5px;
+}
+
+.dot {
+    background-color: #111;
+}
+
+.sub-item {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin: 0px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.follow {
+    background-color: #ff00ff;
+}
+
 .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 10px;
     margin-top: 10px;
 }
 
 .menu-item {
     background: #111;
-    padding: 14px 20px;
-    margin: 6px 8px;
-    border-radius: 10px;
-    font-size: 16px;
+    padding-bottom: 5px;
+    font-size: 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.3s;
 }
 
+.menu a {
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+    background-color: #000;
+}
+
 .menu-item.turbo {
     color: #ff00ff;
+    border-bottom: 2px solid #ff00ff;
 }
 
 .badge {

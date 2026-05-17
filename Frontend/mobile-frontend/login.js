@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Login button click
-    loginBtn.addEventListener("click", () => {
+    loginBtn.addEventListener("click", async (e) => {
+        e.preventDefault();
         const username = usernameInput.value.trim();
         const password = passwordInput.value.trim();
 
@@ -22,12 +23,23 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("Please enter both username and password.");
             return;
         }
-
-        // Simulate login
-        console.log("Username:", username);
-        console.log("Password:", password);
-
-        alert("Login submitted!");
+        try {
+            const res = await fetch("http://localhost:3000/api/login", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ username, password }),
+            });
+            const data = await res.json();
+            if (data.success) {
+                alert("Login successful!");
+                // Redirect or update UI
+                window.location.href = "http://localhost:3000/frontend/home.html";
+            } else {
+                alert(data.message || "Login failed!");
+            }
+        } catch (err) {
+            alert("Error connecting to server.");
+        }
     });
 
     // Optional: Enter key submits the form
