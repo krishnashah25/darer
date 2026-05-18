@@ -172,7 +172,7 @@ export default function Activity({ user }) {
               </button>
             </div>
 
-            <div style={styles.tabContent}>
+            <div style={styles.tabContent} className="tab-transition" key={activeTab}>
               {/* Tab 1: Notifications */}
               {activeTab === 'notifications' && (
                 <div style={styles.notificationsList}>
