@@ -139,12 +139,16 @@ a {
 .main-content-wrapper {
   display: flex;
   flex: 1;
+  min-width: 0;
+  width: 100%;
   margin-top: 70px; /* offset header height */
   margin-bottom: 0px;
 }
 
 .page-container {
   flex: 1;
+  min-width: 0;
+  width: 100%;
   padding: 24px;
   background-color: var(--bg-dark);
   min-height: calc(100vh - 70px);
