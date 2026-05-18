@@ -18,9 +18,9 @@ export default function Header({ user, onLogout }) {
       {/* Left side: Logo & Navigation */}
       <div style={styles.left}>
         <Link to="/" style={styles.logoLink}>
-          <h1 className="logo" style={styles.logoText}>DARER</h1>
+          <h1 className="logo header-logo-text" style={styles.logoText}>DARER</h1>
         </Link>
-        <div style={styles.navLinks}>
+        <div style={styles.navLinks} className="header-nav-links">
           <Link to="/browse" style={styles.navLinkItem}>
             <Compass size={18} color="#00fff7" />
             <span style={styles.navText}>Browse</span>
@@ -33,7 +33,7 @@ export default function Header({ user, onLogout }) {
       </div>
 
       {/* Middle: Search Box */}
-      <form onSubmit={handleSearchSubmit} style={styles.searchForm}>
+      <form onSubmit={handleSearchSubmit} style={styles.searchForm} className="header-search-form">
         <div style={styles.searchContainer}>
           <input
             type="text"
@@ -66,13 +66,13 @@ export default function Header({ user, onLogout }) {
           </div>
         ) : (
           <div style={styles.authButtons}>
-            <Link to="/login" className="btn-neon cyan" style={styles.btnAdjust}>
+            <Link to="/login" className="btn-neon cyan header-btn-adjust" style={styles.btnAdjust}>
               <LogIn size={15} />
-              <span>Log In</span>
+              <span className="btn-neon-text">Log In</span>
             </Link>
-            <Link to="/signup" className="btn-neon pink" style={styles.btnAdjust}>
+            <Link to="/signup" className="btn-neon pink header-btn-adjust" style={styles.btnAdjust}>
               <UserPlus size={15} />
-              <span>Sign Up</span>
+              <span className="btn-neon-text">Sign Up</span>
             </Link>
           </div>
         )}

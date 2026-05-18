@@ -1,0 +1,485 @@
+<<<<<<<< HEAD:Frontend/mobile-frontend/home.css
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 10px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+  color: #00fff7;
+/**  text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7;**/
+}
+
+.header-buttons .btn {
+  border: 2px solid;
+  background: transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+/**  text-shadow: 0 0 5px currentColor;
+  box-shadow: 0 0 5px currentColor;**/
+  transition: 0.3s;
+}
+
+.header-buttons .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px currentColor;
+}
+
+.btn.yellow {
+  border-color: #fffc00;
+  color: #fffc00;
+}
+
+.btn.green {
+  border-color: #00fff7;
+  color: #00fff7;
+}
+
+.btn.pink {
+  border-color: #ff00ff;
+  color: #ff00ff;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  margin-top: 15px;
+  border-bottom: 1px solid #222;
+  text-decoration: none;
+}
+
+.tabs a {
+  text-decoration: none;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+}
+
+.tab.active {
+  color: #ff00ff;
+  border-bottom: 2px solid #ff00ff;
+}
+
+/* Live Section */
+.section-title {
+  margin: 20px 0 10px;
+  font-size: 18px;
+}
+
+.yellow-text {
+  color: #fffc00;
+}
+
+.pink-text {
+  color: #ff00ff;
+}
+
+.green-text {
+ /** color: #00ff00;**/
+ color: #00fff7;
+}
+
+.streams {
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+  padding-bottom: 10px;
+}
+
+.stream-card {
+  position: relative;
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.stream-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.stream-card img:hover {
+/**  box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ff00;**/
+  transform-origin: 0.3s;
+}
+
+.stream-title {
+  font-size: 14px;
+  text-shadow: 0 0 5px #00fff7;
+}
+.live-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: red;
+  color: white;
+  padding: 2px 5px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.viewer-count {
+  position: absolute;
+  bottom: 90px;
+  left: 10px;
+  background: rgba(0,0,0,0.7);
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.stream-info {
+  margin-top: 6px;
+}
+
+.stream-title {
+  font-size: 14px;
+}
+
+.streamer, .game-title {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.yellow-tag {
+  background: #ffff00;
+  color: #000;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* Categories */
+.categories {
+  margin-top: 20px;
+}
+
+.category-list {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.category {
+  text-align: center;
+  font-size: 12px;
+}
+
+.category img {
+  width: 80px;
+  height: 80px;
+  border:2px solid #ff00ff;
+  border-radius: 10px;
+  margin-bottom: 4px;
+}
+
+.category span {
+  color: #ccc;
+  font-size: 11px;
+}
+/** bottom bar **/ 
+.bottombar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #222;
+  box-sizing: border-box;
+}
+
+.bottombar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #222;
+    box-sizing: border-box;
+}
+
+.bottombar i {
+    padding-left: 12px;
+}
+
+.bottombar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13.3333px;
+========
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 10px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+  color: #00fff7;
+/**  text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7;**/
+}
+
+.header-buttons .btn {
+  border: 2px solid;
+  background: transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+/**  text-shadow: 0 0 5px currentColor;
+  box-shadow: 0 0 5px currentColor;**/
+  transition: 0.3s;
+}
+
+.header-buttons .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px currentColor;
+}
+
+.btn.yellow {
+  border-color: #fffc00;
+  color: #fffc00;
+}
+
+.btn.green {
+  border-color: #00fff7;
+  color: #00fff7;
+}
+
+.btn.pink {
+  border-color: #ff00ff;
+  color: #ff00ff;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  margin-top: 15px;
+  border-bottom: 1px solid #222;
+  text-decoration: none;
+}
+
+.tabs a {
+  text-decoration: none;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+}
+
+.tab.active {
+  color: #ff00ff;
+  border-bottom: 2px solid #ff00ff;
+}
+
+/* Live Section */
+.section-title {
+  margin: 20px 0 10px;
+  font-size: 18px;
+}
+
+.yellow-text {
+  color: #fffc00;
+}
+
+.pink-text {
+  color: #ff00ff;
+}
+
+.green-text {
+ /** color: #00ff00;**/
+ color: #00fff7;
+}
+
+.streams {
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+  padding-bottom: 10px;
+}
+
+.stream-card {
+  position: relative;
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.stream-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.stream-card img:hover {
+/**  box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ff00;**/
+  transform-origin: 0.3s;
+}
+
+.stream-title {
+  font-size: 14px;
+  text-shadow: 0 0 5px #00fff7;
+}
+.live-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: red;
+  color: white;
+  padding: 2px 5px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.viewer-count {
+  position: absolute;
+  bottom: 90px;
+  left: 10px;
+  background: rgba(0,0,0,0.7);
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.stream-info {
+  margin-top: 6px;
+}
+
+.stream-title {
+  font-size: 14px;
+}
+
+.streamer, .game-title {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.yellow-tag {
+  background: #ffff00;
+  color: #000;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* Categories */
+.categories {
+  margin-top: 20px;
+}
+
+.category-list {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.category {
+  text-align: center;
+  font-size: 12px;
+}
+
+.category img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+}
+
+.category span {
+  color: #ccc;
+  font-size: 11px;
+}
+/** bottom bar **/ 
+.bottombar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #222;
+  box-sizing: border-box;
+}
+
+.bottombar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #222;
+    box-sizing: border-box;
+}
+
+.bottombar i {
+    padding-left: 12px;
+}
+
+.bottombar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13.3333px;
+>>>>>>>> 04584b583699eec5e8730475bf85ab07c29dbb5a:frontend/home.css
+}

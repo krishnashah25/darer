@@ -392,6 +392,22 @@ a {
   .sidebar-desktop {
     display: none !important;
   }
+  .header-nav-links {
+    display: none !important;
+  }
+  .header-search-form {
+    flex: 1 !important;
+    margin: 0 10px !important;
+  }
+  .header-logo-text {
+    font-size: 20px !important;
+  }
+  .btn-neon-text {
+    display: none !important;
+  }
+  .header-btn-adjust {
+    padding: 6px 8px !important;
+  }
 }
 
 /* Fade In Transition Animation */
